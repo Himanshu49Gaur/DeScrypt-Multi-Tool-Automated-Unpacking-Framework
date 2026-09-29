@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Environments
+.venv/
+env/
+venv/
+ENV/
+
+# Testing & Linters
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Local Outputs & Data
+out/
+runs/
+*.ps1
+!tests/fixtures/*.py
+
+# OS specific
+.DS_Store
+Thumbs.db

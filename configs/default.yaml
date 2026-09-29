@@ -1,0 +1,16 @@
+# DeScrypt Default Configuration
+# Paper References: Section 2.1, Section 3.1, Section 3.3, Section 3.7
+
+engine:
+  mode: "static"                     # "static" or "dynamic" (Section 3.1, 4.1)
+  max_depth: 12                      # Maximum unpacking recursion depth (Section 3.3)
+  time_budget_s: 300.0               # Per-sample timeout budget in seconds (Section 3.1)
+  min_tool_confidence: 0.30          # Minimum confidence required to branch
+
+scoring:
+  malicious_threshold: 0.50          # Decision threshold for malicious verdict (Section 2.1, 3.7)
+  js_eval_packer_weight: 0.10        # Tuned weight to avoid FP on lodash (Section 3.7)
+  base64_min_length: 32              # Minimum character length for base64 candidates (Section 3.7)
+
+detection:
+  entropy_clean_threshold: 6.5       # Clean terminal entropy cutoff (Section 3.2)
