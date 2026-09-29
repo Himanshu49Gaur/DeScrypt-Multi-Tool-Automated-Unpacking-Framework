@@ -21,6 +21,7 @@ htmlcov/
 
 # Local Outputs & Data
 out/
+demo_out/
 runs/
 *.ps1
 !tests/fixtures/*.py
